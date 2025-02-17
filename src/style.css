@@ -1,0 +1,112 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container {
+    width: 800px;
+    margin: 40px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.search-box {
+    width: 90%;
+    border: 1px solid lightgray;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+#input-box {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+}
+
+.fa-solid {
+    font-size: 18px;
+    color: gray;
+}
+
+
+.heading {
+    margin-top: 40px;
+    font-size: 3rem;
+}
+
+.recommendation {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.normal {
+    min-width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    background-color: #eaeaeb;
+    cursor: pointer;
+}
+
+.active {
+    background-color: dimgrey;
+    color: white;
+}
+
+
+.news-view {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.news-view div:first-child {
+    grid-column: span 2;
+}
+
+.news-card {
+    background-color: #eaeaeb;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+@media (min-width: 768px) {
+    .news-view {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+.show-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin: 40px auto 20px;
+}
+
+
+.highlight {
+    color: red;
+    font-weight: bold;
+}
